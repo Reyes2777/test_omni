@@ -21,7 +21,7 @@ This is a test to omnilatam, the app is built according to the requested require
 #Run Application
 
 * Execute:
-  >  docker-compose up+
+  >  docker-compose up
 
 #Testing
 Run all tests with pytest -s -vvvv. For more uses of pytest, check this <https://docs.pytest.org/en/latest/usage.html>_.

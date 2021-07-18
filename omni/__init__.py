@@ -2,7 +2,7 @@ from starlette.applications import Starlette
 from starlette.responses import JSONResponse
 from starlette.routing import Route
 
-from run_db import run
+from DB import run
 
 
 async def homepage(request):
