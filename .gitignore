@@ -1,0 +1,14 @@
+env/
+.env*
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sphinx documentation
+docs/_static/
+docs/_templates
+
+data/*

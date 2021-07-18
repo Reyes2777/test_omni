@@ -1,0 +1,4 @@
+asyncpg==0.23.0
+starlette==0.15.0
+tortoise-orm==0.17.5
+uvicorn==0.14.0
