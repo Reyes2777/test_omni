@@ -8,7 +8,7 @@ from starlette.testclient import TestClient
 
 from DB import run
 from omni import app
-from omni.tests.integration_test.factories import UserFactory
+from omni.tests.integration_test.factories import UserFactory, ProductFactory
 
 
 @fixture(scope='session')
@@ -62,3 +62,10 @@ async def user_fixture():
     user = UserFactory.build()
     await user.save()
     return user
+
+
+@fixture
+async def product_fixture():
+    product = ProductFactory.build()
+    await product.save()
+    return product

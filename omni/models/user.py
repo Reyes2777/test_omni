@@ -8,4 +8,4 @@ class User(ToDict, Model):
     first_name = fields.TextField()
     last_name = fields.TextField()
     mobile_phone = fields.TextField()
-    email = fields.TextField()
+    email = fields.CharField(max_length=50, unique=True)
