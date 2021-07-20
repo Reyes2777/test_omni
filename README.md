@@ -24,4 +24,8 @@ This is a test to omnilatam, the app is built according to the requested require
   >  docker-compose up
 
 #Testing
-Run all tests with pytest -s -vvvv. For more uses of pytest, check this <https://docs.pytest.org/en/latest/usage.html>_.
+* Install requirements in you environment
+  >  pip install -r requirements_dev.txt
+
+* Run all tests with pytest. For more uses of pytest, check this <https://docs.pytest.org/en/latest/usage.html>_.
+  >  pytest -s -vvvv
