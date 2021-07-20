@@ -37,3 +37,7 @@ class BaseController:
 
     async def delete(self, _id):
         await self._model.get(id=_id).delete()
+
+    @classmethod
+    async def all(cls):
+        return await cls._model.all()

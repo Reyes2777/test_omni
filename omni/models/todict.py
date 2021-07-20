@@ -6,7 +6,7 @@ class ToDict:
     def to_dict(self):
         data = {}
         for attribute, value in self.__dict__.items():
-            if(not attribute.startswith('__' and not attribute.endswith('__'))) and not (attribute.startswith('_')):
+            if (not attribute.startswith('__') and not attribute.endswith('__')) and not attribute.startswith('_'):
                 if type(value) == decimal.Decimal:
                     data[attribute] = str(value)
                 elif isinstance(value, (datetime.datetime, datetime.date)):
