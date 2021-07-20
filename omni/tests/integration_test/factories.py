@@ -1,6 +1,6 @@
 import factory
 
-from omni.models import User, Product
+from omni.models import User, Product, Order
 
 
 class UserFactory(factory.Factory):
@@ -19,3 +19,4 @@ class ProductFactory(factory.Factory):
 
     class Meta:
         model = Product
+
