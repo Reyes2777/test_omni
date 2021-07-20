@@ -10,11 +10,11 @@ async def run(generate_schemas=False):
                 'omni': {
                     'engine': 'tortoise.backends.asyncpg',
                     'credentials': {
-                        'host': os.environ['DEFAULT_DB_HOST'],
-                        'port': os.environ['DEFAULT_DB_HOST_PORT'],
-                        'user': os.environ['DEFAULT_DB_USER'],
-                        'password': os.environ['DEFAULT_DB_PASSWORD'],
-                        'database': os.environ['DEFAULT_DB_NAME'],
+                        'host': os.environ['DB_HOST'],
+                        'port': os.environ['DB_PORT'],
+                        'user': os.environ['DB_USER'],
+                        'password': os.environ['DB_PASSWORD'],
+                        'database': os.environ['DB_NAME'],
                     }
                 }
             },
