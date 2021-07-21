@@ -9,9 +9,9 @@ async def homepage(request):
     return response(message='Successfully', status_code=200)
 
 app = Starlette(debug=True, routes=[Route('/', homepage)])
-from omni.api import user_api, product_api
+from omni.api import user_api, product_api, order_api
 
-
+app.mount('/api/order', order_api)
 app.mount('/api/user', user_api)
 app.mount('/api/product', product_api)
 
